@@ -1,0 +1,14 @@
+{
+  "validUser": {
+    "email": "standard_user",
+    "password": "secret_sauce"
+  },
+  "invalidUser": {
+    "email": "wrong_user",
+    "password": "wrong_password"
+  },
+  "emptyUser": {
+    "email": "wrong_user",
+    "password": ""
+  }
+}

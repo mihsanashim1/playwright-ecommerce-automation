@@ -1,0 +1,23 @@
+{
+    "sampleProduct": {
+        "sku": "sauce-labs-bike-light",
+        "name": "Sauce Labs Bike Light",
+        "price": "$29.99"
+    },
+    "searchProduct": {
+        "keyword": "Backpack"
+    },
+    "multipleProducts": [
+        {
+            "name": "Sauce Labs Backpack",
+            "price": 29.99
+        },
+        {
+            "name": "Sauce Labs Bike Light",
+            "price": 9.99
+        }
+    ],
+    "expensiveProduct": {
+        "name": "Sauce Labs Fleece Jacket"
+    }
+}
