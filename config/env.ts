@@ -1,7 +1,7 @@
 const ENVIRONMENTS = {
   dev: 'https://dev.example.com',
   uat: 'https://staging.example.com',
-  prod: 'https://www.saucedemo.com'
+  prod: 'https://uat-storefront-qut.hdlcommerce.cloud/se/sv'
 };
 
 export const ENV = {
