@@ -3,23 +3,14 @@ import { test, expect } from '../../fixtures/baseTest';
 test('test', async ({ page }) => {
     page.setDefaultTimeout(60000);
     await page.locator('.icon-user').first().click();
-    await page.waitForTimeout(1000);
     await expect(page).toHaveURL(/.*\/login/);
-    // await page.getByRole('textbox', { name: 'E-post' }).click();
     await page.getByRole('textbox', { name: 'E-post' }).fill('sibenson.gautam@hazesoft.co');
-    // await page.getByRole('textbox', { name: 'Lösenord' }).click();
     await page.getByRole('textbox', { name: 'Lösenord' }).fill('Sidd@123');
     await page.getByRole('button', { name: 'Logga in' }).click();
-    // await page.goto('https://uat-storefront-qut.hdlcommerce.cloud/se/sv');
-    // await expect(page.getByText('Populära kategorier')).toBeVisible();
 
     await page.getByRole('banner').getByRole('link', { name: 'Hårprodukter' }).click();
     await page.getByText('Service Perm Pre Treatment 18ml').click();
-    // await page.getByRole('link', { name: 'thumb image Service Perm Pre' }).click();
     await page.getByRole('button', { name: 'Lägg till i kundvagn' }).click();
-    // await expect(page.locator('div').filter({ hasText: 'Service Perm Pre Treatment' }).nth(2)).toBeVisible();
-    // await page.getByRole('link', { name: 'Gå till kassan ' }).click();
-    // await expect(page.getByText('Betalning', { exact: true })).toBeVisible();
 
     await expect(page.locator('.drawer-body')).toBeVisible();
     await expect(page.locator('.drawer-footer')).toBeVisible();
